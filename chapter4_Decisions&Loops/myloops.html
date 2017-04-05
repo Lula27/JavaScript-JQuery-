@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Loops</title>
+	</head>
+	<body>
+
+		<h1>Practicing Loops!</h1>
+		<div id="forloops"></div>
+		<h2>Example 1</h2>
+		<div id="ex1"></div>
+		<div id="add"></div>
+
+		<h3>While Loop Example</h3>
+		<div id="while"></div>
+		
+	
+	<script type="text/javascript">
+
+		// Model - create variables 
+		var scores = [70, 55, 98];
+		var length = scores.length; 
+		var roundNumber = 0; 
+		var msg = '';
+		var i; 
+
+
+		// Loop through items in array 
+		for (i = 0; i < length; i++) {
+
+			// Add 1 to current round
+			roundNumber = (i + 0);
+
+			// Write current round to message
+			msg += 'Round ' + roundNumber + ': ';
+
+			// Get score from scores array 
+			msg += scores[i] + '<br/>';
+		}
+
+		document.getElementById('forloops').innerHTML = msg;
+
+
+		// Practice 1
+		var count = [1, 2, 3];
+
+		// create for loop
+			for (i = 0; i < count.length; i++) {
+
+				add = (i + 1)
+
+				var list = 'Number: ' + count[i] + '<br/>'; 
+
+				var message = count[i] + add + '<br/>';
+			}
+
+
+		document.getElementById('ex1').innerHTML = list; 
+
+		document.getElementById('add').innerHTML = message; 
+
+
+		// Practice 2: While Loops
+		var i = 1;     // Set counter to 1
+		var msg1 = ''; 
+
+		// Store 5 times table in a variable 
+		while (i < 10) {
+			msg1 += i + ' x 5 = ' + (i * 5) + '<br />';
+			i++;
+		} while (i < 1); 
+
+		document.getElementById('while').innerHTML = msg1; 
+
+
+
+	</script>
+
+
+	</body>
+</html>

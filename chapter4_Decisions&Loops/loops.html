@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using Loops</title>
+</head>
+<body>
+
+	<h1>Using For Loops</h1>
+	<div id="answer"></div>
+
+	<h2>1x Table</h2>
+	<div id="one"></div>
+
+	<h2>2x Table</h2>
+	<div id="two"></div>
+
+	<h2>3x Table</h2>
+	<div id="three"></div>
+
+	<h2>4x Table</h2>
+	<div id="four"></div>
+
+	<h2>5x Table</h2>
+	<div id="five"></div>
+
+	<h2>6x Table</h2>
+	<div id="six"></div>
+
+	<h2>7x Table</h2>
+	<div id="seven"></div>
+
+	<h2>8x Table</h2>
+	<div id="eight"></div>
+
+	<h2>9x Table</h2>
+	<div id="nine"></div>
+
+	<h2>10x Table</h2>
+	<div id="ten"></div>
+
+	<h2>Using Do While Loops</h2>
+	<div id="ansthree"></div>
+
+	<h2>Count to Ten!</h2>
+	<div id="count"></div>
+
+	<h2>Count to Hundred!</h2>
+	<div id="cien"></div>
+	
+
+	<script type="text/javascript">
+		
+		var scores = [24, 32, 17];	// Array of scores
+		var arrayLength = scores.length  // Items in array
+		var roundNumber = 0;	// Current round
+		var msg = '';			// Message
+		var i; 					// Counter 
+
+		// Loop through the items in the array
+		for (i = 0; i < arrayLength; i++) {
+
+			// Arrays are zero based (so 0 is round 1)
+			// Add 1 to the current round
+			roundNumber = (i + 1);
+
+			// Write the current round to message
+			msg += 'Round ' + roundNumber + ': ';
+
+			// Get the score from the scores array 
+			msg += scores[i] + '<br/>';
+
+		}
+
+		document.getElementById('answer').innerHTML = msg; 
+
+
+		// 1 Times Table
+
+		var i = 1; 
+		var msgone = ''; 
+
+		while (i <= 10) {
+			msgone += i + ' x 1 = ' + (i * 1) + '<br />';
+			i++; 
+		} while (i < 1); 
+
+		document.getElementById('one').innerHTML = msgone; 
+
+
+		// 2 Times Table 
+
+		var i = 1; 
+		var msgtwo = '';
+
+		while (i <= 10) {
+			msgtwo += i + 'x 2 = ' + (i * 2) + '<br />';
+			i++;
+		} while (i < 1); 
+
+		document.getElementById('two').innerHTML = msgtwo; 
+
+
+		// 3 Times Table
+
+		var i = 1;
+		var msgthree = '';
+
+		while (i <= 10) {
+			msgthree += i + ' x 3 = ' + (i * 3) + '<br />';
+			i++;
+		} while (i < 1);
+
+
+		document.getElementById('three').innerHTML = msgthree; 
+
+		// Using While Loops
+		var i = 1;			// Set counter to 1 
+		var msg = '';		// Message 
+
+		// 4 Times Table 
+
+		var i = 1; 
+		var msgfour = '';
+
+		while (i <= 10) {
+			msgfour += i + ' x 4 =' + (i * 4) + '<br />';
+			i++; 
+		} while (i < 1); 
+
+		document.getElementById('four').innerHTML = msgfour; 
+
+		//	5 Times Table 
+		// Store 5 times table in a variable 
+
+		var i = 1; 
+		var msgfive = '';
+
+		while (i <= 10) {
+			msgfive += i + ' x 5 = ' + (i * 5) + '<br />';
+			i++; 
+		} while (i < 1);
+		// Note how this is already 1 and it still runs...
+
+		// chained something you previously broke into two steps into one simple piece of code. 
+		document.getElementById('five').innerHTML = msgfive; 
+
+
+		// With 6x table 
+		var i = 1; 
+		var msgsx = '';
+
+		// Store 6x table in variable 
+
+		while (i <= 10) {
+			msgsx += i + ' x 6 = ' + (i * 6) + '<br />';
+			i++;
+		} while (i < 1);
+
+		document.getElementById('six').innerHTML = msgsx; 
+
+
+		// 7x table 
+		var i = 1; 
+		var mymsg = ''; 
+
+		// Store 7 times in a a variable 
+		while (i <= 10) {
+			mymsg += i + ' x 7 = ' + (i * 7) + '<br />';
+			i++;
+		} while (i < 1); 
+
+		document.getElementById('seven').innerHTML = mymsg; 
+
+
+		// 8x Table
+		var i = 1; 
+		var msgeight = '';
+
+		while (i <= 10) {
+			msgeight += i + ' x 8 =' + (i * 8) + '<br />'; 
+			i++; 
+		} while (i < 1); 
+
+		document.getElementById('eight').innerHTML = msgeight; 
+
+		// 9 Times Table --hmmm...seems to work w/o the final while statement 
+		var i = 0;
+		var msgnine = '';
+
+		while (i <= 10) {
+		 msgnine += i + ' x 9  = ' + (i * 9) +'<br/ >';
+		 i++; 
+		} 
+
+		document.getElementById('nine').innerHTML = msgnine; 
+
+
+		// 10 Times Table 
+
+		var i = 0;
+		var msgten = ''; 
+		
+		while (i <= 10) {
+			msgten += i + ' x 10 = ' + (i * 10) + '<br />'; 
+			i++; 
+		}
+
+		document.getElementById('ten').innerHTML = msgten; 
+
+		// Practice with do while loops
+
+		
+		// Using Do While Loops
+		var i = 1; 
+		var msg = '';
+
+		// Store 5 times table in a variable 
+		do {
+			msg += i + ' x 5 = '  + (i * 5) + '<br/>'; 
+			i++;
+		} while (i < 1);
+		// Note how this is already 1 and it still runs...
+		document.getElementById('ansthree').innerHTML = msg; 
+
+
+		
+		// Count from 1 to 10!
+
+		var i = 0; 
+		var msgcount = '';
+
+		while (i <= 10) {
+			msgcount += i + '<br />'; 
+			i++; 
+		} while (i = 0); 
+
+		console.log(msgcount); 
+		document.getElementById('count').innerHTML = msgcount; 
+
+
+		// Count from 1 to 100
+
+		var i = 0; 
+		var msgcien = ''; 
+
+		while (i <= 100) {
+			msgcien += i + '<br />'==;   
+			i++; 
+		} 
+
+		document.getElementById('cien').innerHTML = msgcien; 
+
+
+
+
+	</script>
+
+</body>
+</html>

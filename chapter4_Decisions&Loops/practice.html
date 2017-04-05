@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Practice</title>
+	</head>
+	<body>
+		<h1>Using Comparison Operators</h1>
+		<div id="comp"></div>
+		<div id="age"></div>
+		<div id="diff"></div>
+		<div id="greater"></div>
+
+		<h2>Using Two Comparison Operators</h2>
+
+			<table style="width: 50%">
+				<tr>
+					<th>Week</th>
+					<th>Wage</th>
+				</tr>
+				<tr>
+					<td align="center">1</td>
+					<td id="one" align="center">test</td>
+				</tr>
+				<tr>
+					<td align="center">1</td>
+					<td id="two" align="center"></td>
+				</tr>
+				<tr>
+					<td align="center">2</td>
+					<td id="three" align="center"></td>
+				</tr>
+				<tr>
+					<td align="center">2</td>
+					<td id="four" align="center"></td>
+				</tr>
+			</table>
+
+			<div id="twice"></div>
+
+				<br>
+
+			<div id="thrice"></div>
+
+				<br>
+
+			<div id="cuatro"></div>
+
+
+		<script type="text/javascript">
+			// Using Comparison Operators 
+			var pass = 70
+			var score = 65
+
+			var msg = ''; 
+
+			// console.log(score > pass); --> strictly greaer than 
+			var outcome = score > pass; 
+
+			msg += 'Hurrah! Did I pass or nah? ' + 'Survay says:...' + outcome; 
+
+			el = document.getElementById('comp')
+
+			el.innerHTML = msg; 
+
+
+			// Strictly equal to and != to
+
+			var myAge = 25; 
+			var sisterAge = 23;
+
+			var msg = '';
+
+			var rebuttal = ''; 
+
+			var ageSame = myAge === sisterAge;
+
+			// console.log(ageSame); 
+
+			var ageDiff = myAge != sisterAge;
+
+			// console.log(ageDiff);
+
+			msg += 'Genie, is my sister my twin? ' + '<br>Response: ' + ageSame; 
+
+			el = document.getElementById('age');
+			el.innerHTML =  msg; 
+
+			rebuttal += 'Ok...so are our ages different?' + '<br> Response: ' + ageDiff; 
+
+			el = document.getElementById('diff');
+			el.innerHTML = rebuttal; 
+
+
+			// Greater than or equal to 
+
+			var older = sisterAge >= myAge;
+
+			var lastQuestion = '';
+
+			lastQuestion += 'Alright Genie, this is the last thing I would like to know. Is my sister older than me? ' + '<br> Response: ' + older;
+
+			var el = document.getElementById('greater');
+			el.innerHTML = lastQuestion; 
+
+
+
+			// For Using Two Comparison Operators
+			var wk1Wage1 = 200;
+			var wk1Wage2 = 400;
+			var wk2Wage3 = 150;
+			var wk2Wage4 = 500;
+
+			var compare = (wk1Wage1 + wk1Wage2)  >= (wk2Wage3 + wk2Wage4);
+
+			// console.log(compare); 
+
+			// Populate onto table
+			document.getElementById('one').innerHTML = '$ '+ wk1Wage1; 
+
+			document.getElementById('two').innerHTML = '$ ' + wk1Wage2; 
+
+			document.getElementById('three').innerHTML = '$ ' + wk2Wage3;
+
+			document.getElementById('four').innerHTML = '$ ' + wk2Wage4; 
+
+
+			var question = '';
+
+			question += "Hi, HR Clinton! Were my wages higher during week one? <br> Response: " + compare; 
+
+			document.getElementById('twice').innerHTML = question; 
+
+
+			var check = (wk1Wage1 <= wk1Wage2) && (wk2Wage3 >= wk2Wage4);
+
+			// console.log(check); 
+
+			var inquery = '';
+
+			inquery += "Is my logic correct? <br> Answer: " + check; 
+
+			document.getElementById('thrice').innerHTML = inquery; 
+
+			
+			// Either or! 
+			var check2 = (wk1Wage1 <= wk1Wage2) || (wk2Wage3 >= wk2Wage4);
+
+			// console.log(check2); 
+
+			askAgain = "Is my logic right now? <br> Answer: " + check2; 
+
+			document.getElementById('cuatro').innerHTML =askAgain;   
+
+
+
+
+		</script>
+
+	</body>
+</html>
