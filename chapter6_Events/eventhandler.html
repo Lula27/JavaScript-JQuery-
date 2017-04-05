@@ -4,6 +4,7 @@
 		<title>USING DOM EVENT HANDLERS</title>
 	</head>
 	<body>
+	<!-- left off on pg 251 -->
 		<form method="post">
 			<label for="username">Create a username: </label>
 			<div id="feedback"></div>
@@ -16,4 +17,18 @@
 		</form>
 
 	</body>
+
+	<script type="text/javascript">
+		
+		function checkUsername() {
+			var elMsg = document.getElementById('feedback');
+			var elUsername = document.getElementById('username');
+			if (elUsername.value.length < 5) {
+				elMsg.textContent = 'Username must be 5 characters or more';
+			} else {
+				elMsg.textContent = ''; 
+			}
+		}	
+	</script>
+
 </html>
