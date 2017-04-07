@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Introduction to the DOM</title>
+		<!-- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction -->
+		<script type="application/javascript">
+			function setBodyAtter(attr, value){
+				if (document.body)eval('document.body.' '+attr'="'+value+"''); 
+				else notSupport(); 
+			}
+		</script>
+	</head>
+	<body>
+		<div style="margin: .5in; height: 400;"></div>
+
+	</body>
+</html>
