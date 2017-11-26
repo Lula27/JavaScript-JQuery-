@@ -6,7 +6,24 @@
 <body>
 	<div id="output"></div>
 	<script type="text/javascript">
-		
+		var scores = [24, 32, 17];   // Array of scores
+		var arrayLength = scores.length;  // Items in array
+		var msg = '';  // Current round
+		var i;       // Counter
+
+
+		// Loop through items in array 
+		for (i = 0; i < arrayLength; i++){
+
+			// Arrays are zero based - start with zero (so 0 is round 1)
+			roundNumber = (i + 1); 
+
+			// Write current round to message
+			msg += 'Round ' + roundNumber _ ': '; 
+
+			// Get score from scores array  
+			// scores[i] = each iteration in scores array 
+			msg += scores[i] + '<br />'; 
 
 	</script>
 
