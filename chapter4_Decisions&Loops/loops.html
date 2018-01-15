@@ -268,15 +268,20 @@
 
 
 	// Another for-loop from the top of my head
-	var cars = 10; 
+	
 
 	// Button function 
 	function print() {
-		
+		var cars = 10; 
+		var text = " "; 
+
+		for (i = 0; i < cars.length; i++) {
+			text += cars[i] + "<br>"; 
+		}
 	}
 
 	// Create forloop
-	document.getElementById("test").
+	document.getElementById("test").innerHTML = print(); 
 
 	// For loop to add 1 to x if y is less than 1 
 	for (x=i)
